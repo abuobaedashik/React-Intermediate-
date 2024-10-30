@@ -13,6 +13,7 @@ import Chart from './assets/Chart/Chart.jsx';
 import OtherChart from './assets/BarChart/OtherChart.jsx';
 import Contact from './assets/Contact/Contact.jsx';
 import Posts from './assets/Posts/Posts.jsx';
+import Details from './assets/Details/Details.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,8 +37,13 @@ const router = createBrowserRouter([
       },
       {
         path:"/posts",
-        loader:()=>fetch('https://jsonplaceholder.typicode.com/posts'),
+        loader:()=>fetch('public.json'),
         element:<Posts></Posts>
+      },
+      {
+        path:"/post/:userId",
+        loader:({params})=>fetch(`public.json/post/${params.userId}`),
+        element:<Details></Details>
       }
   ]
   },

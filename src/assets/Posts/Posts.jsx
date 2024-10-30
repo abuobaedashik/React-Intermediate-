@@ -4,11 +4,10 @@ import Post from '../Post/Post';
 
 const Posts = () => {
     const Posts =useLoaderData()
-   console.log(Posts);
     return (
       <div>
            <p>Tota post:{Posts.length}</p>
-           <div className='px-2 gap-5 grid grid-cols-4 '>
+           <div className='px-2 gap-5 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 '>
             {
              Posts.map(post=><Post post={post}></Post>)
             }

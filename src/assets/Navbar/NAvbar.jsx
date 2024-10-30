@@ -10,24 +10,24 @@ const NAvbar = () => {
         <div className=" navbar-center">
           <ul className="menu menu-horizontal  px-1">
             <div className="hidden md:flex gap-2">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/card">Card</Link>
-            </li>
-            <li>
-              <Link to="/Chart1">PChart</Link>
-            </li>
-            <li>
-              <Link to="/Chart2">BarChart</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link to="/posts">Posts</Link>
-            </li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/card">Card</Link>
+              </li>
+              <li>
+                <Link to="/Chart1">PChart</Link>
+              </li>
+              <li>
+                <Link to="/Chart2">BarChart</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+              <li>
+                <Link to="/posts">Posts</Link>
+              </li>
             </div>
 
             <li className="md:hidden block">
@@ -35,13 +35,22 @@ const NAvbar = () => {
                 <summary>Parent</summary>
                 <ul className="bg-base-100 p-2">
                   <li>
-                    <a>Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a>Menu</a>
+                    <Link to="/card">Card</Link>
                   </li>
                   <li>
-                    <a>Contact</a>
+                    <Link to="/Chart1">PChart</Link>
+                  </li>
+                  <li>
+                    <Link to="/Chart2">BarChart</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link to="/posts">Posts</Link>
                   </li>
                 </ul>
               </details>
@@ -49,7 +58,7 @@ const NAvbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-           <button className="btn-ghost">Btn</button>
+          <button className="btn-ghost">Btn</button>
         </div>
       </div>
     </div>
